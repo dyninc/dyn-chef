@@ -1,0 +1,10 @@
+name             "dyn"
+maintainer       "Dynamic Network Services, Inc."
+maintainer_email "concierge@dyn.com"
+license          "Apache 2.0"
+description      "LWRP for managing DNS records with Dyn's REST API"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          "1.0.5"
+recipe "dyn-rb", "Installs the dyn-rb RubyGem"
+recipe "dyn::ec2", "Dynamically configures Dyn resource records for EC2 nodes based on instance ID and prepopulated attributes on the node"
+recipe "dyn::a_record", "Example resource usage to configure an A record"
